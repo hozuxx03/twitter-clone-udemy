@@ -1,6 +1,6 @@
 import './App.css';
 import Sideber from './components/sidebar/Sideber';
-import Timeline from './components/timeline/Timeline';
+import TweetBox from './components/timeline/TweetBox';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Sideber />
 
       {/* Timeline */}
-      <Timeline />
+      <TweetBox />
 
 
       {/* Widget */}
