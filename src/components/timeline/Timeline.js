@@ -11,10 +11,12 @@ function Timeline() {
             <h2>ホーム</h2>
         </div>
         {/* TweetBox */}
-    <TweetBox/>
+        <TweetBox/>
         {/* Post */}
         <Post/>
-
+        <Post/>
+        <Post/>
+        <Post/>
         {/* Post */}
         {/* Post */}
         {/* Post */}
