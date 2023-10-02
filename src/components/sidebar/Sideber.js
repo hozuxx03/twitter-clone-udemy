@@ -30,7 +30,7 @@ function Sideber() {
         <SidebarOption text="もっと見る" Icon={MoreHorizTwoToneIcon}/>
 
         {/* ツイートボタン */}
-        <Button variant='outlined' className='sidebar--tweet'>
+        <Button variant='outlined' className='sidebar--tweet' fullWidth>
             ツイートする
         </Button>
     </div>
