@@ -3,11 +3,11 @@ import { Avatar } from '@mui/material';
 import React from 'react';
 import "./Post.css";
 
-function Post({displayName, username, verified, text, image, avater}) {
+function Post({displayName, username, verified, text, image, avatar}) {
     return (
     <div className='post'>
         <div className='post--avatar'>
-            <Avatar src={avater}/>
+            <Avatar src={avatar}/>
         </div>
         <div className='post--body'>
             <div className='post--header'>

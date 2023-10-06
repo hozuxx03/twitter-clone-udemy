@@ -18,7 +18,7 @@ function Timeline() {
             username = "Shin_Engineer"
             verified= {true}
             text="初めてのツイート"
-            avater="https://shincode.info/wp-content/uploads/2021/12/icon.png"
+            avatar="https://shincode.info/wp-content/uploads/2021/12/icon.png"
             image="https://source.unsplash.com/random"
             />
         {/* Post */}
