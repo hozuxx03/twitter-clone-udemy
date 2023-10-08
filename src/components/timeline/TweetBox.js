@@ -6,6 +6,10 @@ function TweetBox() {
 
     const [tweetMessage, setTweetMessage] = useState("");
     const [tweeImage, setTweetImage] = useState("");
+
+    const sendTweet = (e) => {
+        // firebaseのデータベースにデータを追加する
+    };
     
 
     return (
@@ -20,9 +24,14 @@ function TweetBox() {
             </div>
             <input className='tweetBox--imageInput'
                 placeholder='画像のURLを入力してください'
-                type='text'>
+                type='text'
+                onChange={(e) => setTweetImage(e.target.value)}>
             </input>
-            <Button className='tweetBox-tweetButton' type='submit'>ツイートする</Button>
+            <Button className='tweetBox-tweetButton'
+                    type='submit'
+                    onClick={sendTweet}>
+                    ツイートする
+            </Button>
         </form>
     </div>
   );
