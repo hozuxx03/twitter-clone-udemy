@@ -3,7 +3,7 @@ import "./Timeline.css";
 import Post from './Post';
 import TweetBox from './TweetBox';
 import db from "../../firebase";
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs, orderBy, query } from "firebase/firestore"; 
 
 function Timeline() {
 
@@ -11,7 +11,8 @@ function Timeline() {
 
     useEffect (() =>{
         const postData = collection(db, "posts");
-        getDocs(postData).then((querySnapshot) => {
+        const q = query(postData, orderBy("timestamp", "desc"));
+        getDocs(q).then((querySnapshot) => {
             setPosts(querySnapshot.docs.map((doc)=> doc.data()));
         });
     }, []);
