@@ -20,7 +20,7 @@ function Sideber() {
         <TwitterIcon className='sideber--twitterIcon'/>
 
         {/* SideberOption */}
-        <SidebarOption text="ホーム" Icon={HomeSharpIcon}/>
+        <SidebarOption text="ホーム" Icon={HomeSharpIcon} active />
         <SidebarOption text="話題を検索" Icon={SearchSharpIcon }/>
         <SidebarOption text="通知" Icon={NotificationsNoneIcon}/>
         <SidebarOption text="メッセージ" Icon={MailOutlineTwoToneIcon }/>
